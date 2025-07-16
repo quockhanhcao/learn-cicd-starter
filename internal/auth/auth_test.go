@@ -40,7 +40,7 @@ func TestGetAPIKey(t *testing.T) {
 	assert.Equal(t, "malformed authorization header", err.Error())
 	assert.Equal(t, "", authHeader)
 
-    // another way to test
+	// another way to test
 	tests := map[string]struct {
 		input              map[string][]string
 		expectedAuthHeader string
